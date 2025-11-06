@@ -173,7 +173,7 @@ openhands/events/serialization/observation.py中新增GitRepoDownloadObservation
 
 ## 新增Function Calling 调用
 
-openhands/agenthub/codeact_agent/function_calling.py中新增工具GitRepoDownloadTool的调用
+openhands/agenthub/codeact_agent/function_calling.py中的response_to_actions方法中新增工具GitRepoDownloadToolAction的解析
 ![img_13.png](imgs/img_13.png)
 
 ## RuntimeClient新增接口调用
