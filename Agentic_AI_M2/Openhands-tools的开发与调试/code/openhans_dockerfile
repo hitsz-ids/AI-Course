@@ -1,0 +1,4 @@
+FROM ghcr.io/all-hands-ai/runtime:0.48-nikolaik
+
+COPY OpenHands_0.48.0 /openhands/code
+
