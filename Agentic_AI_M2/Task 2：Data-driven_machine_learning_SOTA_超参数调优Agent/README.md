@@ -35,9 +35,9 @@
 
 需复现的论文如下：
 
- [AutoML-Agent-A_Multi-Agent_LLM_Framework_for_Full-Pipeline_AutoML.pdf](pdf/AutoML-Agent- A Multi-Agent LLM Framework for Full-Pipeline AutoML.pdf) 
+ [AutoML-Agent-A_Multi-Agent_LLM_Framework_for_Full-Pipeline_AutoML.pdf](./pdf/AutoML-Agent-A Multi-Agent LLM Framework for Full-Pipeline AutoML.pdf) 
 
- [SELA-TREE-SEARCH_ENHANCED_LLM_AGENTS_FOR_AUTOMATED_MACHINE_LEARNING.pdf](pdf/SELA- TREE-SEARCH ENHANCED LLM AGENTS FOR AUTOMATED MACHINE LEARNING.pdf) 
+ [SELA-TREE-SEARCH_ENHANCED_LLM_AGENTS_FOR_AUTOMATED_MACHINE_LEARNING.pdf](./pdf/SELA-TREE-SEARCH ENHANCED LLM AGENTS FOR AUTOMATED MACHINE LEARNING.pdf) 
 
 2、自己继续探索其他相关工作的效果，
 
