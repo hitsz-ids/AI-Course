@@ -189,7 +189,7 @@ https://github.com/PaddlePaddle/PaddleSpatial/tree/main/apps/wpf_baseline_gru/kd
   - contributions_and_innovations: "本文的主要贡献是设计了一个专门用于长序列风电预测的Transformer架构——**Hiformer**，在特征处理和模型结构上均有创新：(1) 提出了一种**混合频率特征增强**机制，将时间序列的信号分解与气象特征提取相结合，增强了模型对不同时间尺度下风电变化模式的表征能力。通过引入频域分解方法，模型能够分别捕捉风电功率的低频长期趋势和高频短期波动，并结合关键气象变量（如风速、风向等）来刻画环境因素对功率的影响；(2) 采用了改进的**Inverted Transformer**编码器架构，仅使用Transformer编码器堆叠而省略了解码器，通过多尺度的时序下采样和特征融合来实现长序列建模。该架构使用分层的编码器对时间序列进行粗细粒度交替的表示学习，并在编码过程中引入跳跃连接确保长程预测的稳定性；(3) 在性能上，Hiformer显著超越了先前的最佳模型。根据论文给出的结果，相较之前的SOTA方法，本模型将预测精度最高提升了约52.5%，同时将计算时间最多减少了约68.5%，在长时间风电功率预测任务上达到了新的性能峰值。"
   - methodology_or_algorithm: "Hiformer的方法是将时序分解、气象信息融合与Transformer编码器有机结合。首先，作者对原始风电功率序列进行信号分解处理，将历史功率数据拆解为不同频率成分（例如趋势部分和周期波动部分），以分别提取长短期特征。同时，将对应时间的历史气象观测作为附加特征输入。模型采用改进的**Transformer编码器**框架，在每一层分别处理时间序列特征和气象特征，然后通过**混合频率特征增强模块**(Hybrid Frequency Feature Enhancement)将两类特征融合，捕捉气象条件与功率变化之间的相关关系。编码器内部引入了**分层多尺度**结构：对时间序列逐步降采样获取粗粒度表示，再通过上采样和残差连接逐层恢复细粒度信息，从而在长序列预测中既抓住全局趋势又保留局部细节。最终，Hiformer利用一个前馈网络将最后一层编码器输出直接映射为未来预定时长（例如48小时，包含若干步）的功率预测值，不需要传统Transformer的解码器部分。由于采用仅编码器的设计并结合多尺度特征融合，该算法在保证预测精度的同时有效降低了长序列预测的模型复杂度和运行时间。"
   - "evaluation_results": { "Spatial Dynamic Wind Power Forecasting (SDWPF) dataset": { "MAE": 0.27, "MSE": 0.19 } },
-  - "github_url": "https://github.com/valuestdio/Hiformer"
+  - "github_url": "https://github.com/linyi201314/Hiformer"
 
 ## 6 其他参考材料
 
