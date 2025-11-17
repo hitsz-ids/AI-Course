@@ -46,7 +46,7 @@
 
 ## 风电功率预测（Wind Power ）
 
-任务背景： [风电功率预测（短期）SOW](../风电功率预测（短期）SOW\README.md) 
+任务背景： [风电功率预测（短期）SOW](../风电功率预测（短期）_SOW/README.md) 
 
 | SOTA                                        | OpenHands性能 | 目前最高性能 |
 | ------------------------------------------- | ------------- | ------------ |
@@ -54,7 +54,7 @@
 
 ## **时间动作定位（**Temporal Action Localisation）
 
-任务背景： [MLRC-Bench  Temporal Action Localisation SOW](../MLRC-Bench  Temporal Action Localisation SOW\README.md) 
+任务背景： [MLRC-Bench  Temporal Action Localisation SOW](../MLRC-Bench_Temporal_Action_Localisation_SOW/README.md) 
 
 | SOTA                                                         | OpenHands性能 | 目前最高性能 |
 | ------------------------------------------------------------ | ------------- | ------------ |
