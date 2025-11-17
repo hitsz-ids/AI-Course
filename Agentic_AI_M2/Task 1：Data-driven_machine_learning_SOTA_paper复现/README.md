@@ -59,7 +59,7 @@
 | SOTA                                               | 是否成功跑通 | 最终复现得分 | 运行日志 | 结果分析 | 负责人 |
 | -------------------------------------------------- | ------------ | ------------ | -------- | -------- | ------ |
 | [Time-MoE](https://github.com/Time-MoE/Time-MoE)   |              |              |          |          | 方烨   |
-| [Hiformer](https://github.com/valuestdio/Hiformer) |              |              |          |          | 方烨   |
+| [Hiformer](https://github.com/linyi201314/Hiformer) |              |              |          |          | 方烨   |
 | [2DXformer](https://github.com/jseaj/2DXformer)    |              |              |          |          |        |
 | [TimeXer](https://github.com/thuml/TimeXer)        |              |              |          |          |        |
 | [EAC](https://github.com/Onedean/EAC)              |              |              |          |          |        |
