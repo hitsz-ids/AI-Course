@@ -44,24 +44,24 @@
 
 # **时间动作定位（**Temporal Action Localisation）
 
-任务背景： [时间动作定位](..\MLRC-Bench  Temporal Action Localisation SOW\README.md) 
+任务背景： [MLRC-Bench  Temporal Action Localisation SOW](..\MLRC-Bench  Temporal Action Localisation SOW\README.md) 
 
-| SOTA                                                         | 是否成功跑通 | 最终复现得分 | 日志 | 结果分析 |      |
-| ------------------------------------------------------------ | ------------ | ------------ | ---- | -------- | ---- |
-| [DyFADet](https://github.com/yangle15/DyFADet-pytorch?tab=readme-ov-file) |              |              |      |          |      |
-| [TemporalMaxer](https://github.com/TuanTNG/TemporalMaxer)    |              |              |      |          |      |
-| [TriDet](https://github.com/dingfengshi/TriDet)              |              |              |      |          |      |
-| [actionformer](https://github.com/happyharrycn/actionformer_release) |              |              |      |          |      |
+| SOTA                                                         | 是否成功跑通 | 最终复现得分 | 日志 | 结果分析 | 负责人 |
+| ------------------------------------------------------------ | ------------ | ------------ | ---- | -------- | ------ |
+| [DyFADet](https://github.com/yangle15/DyFADet-pytorch?tab=readme-ov-file) |              |              |      |          | 蔡启晔 |
+| [TemporalMaxer](https://github.com/TuanTNG/TemporalMaxer)    |              |              |      |          | 王涵   |
+| [TriDet](https://github.com/dingfengshi/TriDet)              |              |              |      |          | 王涵   |
+| [actionformer](https://github.com/happyharrycn/actionformer_release) |              |              |      |          | 蔡启晔 |
 
 # 风电功率预测（Wind Power ）
 
 任务背景： [风电功率预测（短期）SOW](..\风电功率预测（短期）SOW\README.md) 
 
-| SOTA                                               | 是否成功跑通 | 最终复现得分 | 运行日志 | 结果分析 |       |
-| -------------------------------------------------- | ------------ | ------------ | -------- | -------- | ----- |
-| [Time-MoE](https://github.com/Time-MoE/Time-MoE)   |              |              |          |          | @方烨 |
-| [Hiformer](https://github.com/valuestdio/Hiformer) |              |              |          |          |       |
-| [2DXformer](https://github.com/jseaj/2DXformer)    |              |              |          |          |       |
-| [TimeXer](https://github.com/thuml/TimeXer)        |              |              |          |          |       |
-| [EAC](https://github.com/Onedean/EAC)              |              |              |          |          |       |
-| [ST-ReP](https://github.com/zhuoshu/ST-ReP)        |              |              |          |          |       |
+| SOTA                                               | 是否成功跑通 | 最终复现得分 | 运行日志 | 结果分析 | 负责人 |
+| -------------------------------------------------- | ------------ | ------------ | -------- | -------- | ------ |
+| [Time-MoE](https://github.com/Time-MoE/Time-MoE)   |              |              |          |          | 方烨   |
+| [Hiformer](https://github.com/valuestdio/Hiformer) |              |              |          |          | 方烨   |
+| [2DXformer](https://github.com/jseaj/2DXformer)    |              |              |          |          |        |
+| [TimeXer](https://github.com/thuml/TimeXer)        |              |              |          |          |        |
+| [EAC](https://github.com/Onedean/EAC)              |              |              |          |          |        |
+| [ST-ReP](https://github.com/zhuoshu/ST-ReP)        |              |              |          |          |        |
