@@ -6,7 +6,7 @@
 
 本任务只做**时间动作定位 (Temporal Action Localisation)，不做时间声音定位 (Temporal Sound Localisation) 。**
 
-![1](E:\GitHub\AI-Course\Agentic_AI_M2\MLRC-Bench  Temporal Action Localisation SOW\imgs\1.PNG)
+![1](../MLRC-Bench_Temporal_Action_Localisation_SOW/imgs/1.PNG)
 
 ### 数据
 
@@ -59,7 +59,7 @@ Submissions are evaluated separately for validation and test datasets.
   - Re2TAL
   -  以上模型是OpenAI Deep Research推荐 + 在Baseline【ActionFormer】之后发表的Temporal Action Localization（TAL）领域的 SOTA 方法 + 已集成进OpenTAD工具集中。
 
-![2](E:\GitHub\AI-Course\Agentic_AI_M2\MLRC-Bench  Temporal Action Localisation SOW\imgs\2.PNG)
+![2](../MLRC-Bench_Temporal_Action_Localisation_SOW/imgs/2.PNG)
 
 #### 技术路线分析：
 
@@ -98,4 +98,4 @@ Submissions are evaluated separately for validation and test datasets.
 
 ### 竞赛排名
 
-![3](E:\GitHub\AI-Course\Agentic_AI_M2\MLRC-Bench  Temporal Action Localisation SOW\imgs\3.png)
+![3](../MLRC-Bench_Temporal_Action_Localisation_SOW/imgs/3.png)
