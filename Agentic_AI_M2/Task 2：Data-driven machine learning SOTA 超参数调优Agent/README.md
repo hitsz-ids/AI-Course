@@ -35,9 +35,9 @@
 
 需复现的论文如下：
 
- [AutoML-Agent- A Multi-Agent LLM Framework for Full-Pipeline AutoML.pdf](pdf\AutoML-Agent- A Multi-Agent LLM Framework for Full-Pipeline AutoML.pdf) 
+ [AutoML-Agent-A_Multi-Agent_LLM_Framework_for_Full-Pipeline_AutoML.pdf](pdf\AutoML-Agent- A Multi-Agent LLM Framework for Full-Pipeline AutoML.pdf) 
 
- [SELA- TREE-SEARCH ENHANCED LLM AGENTS FOR AUTOMATED MACHINE LEARNING.pdf](pdf\SELA- TREE-SEARCH ENHANCED LLM AGENTS FOR AUTOMATED MACHINE LEARNING.pdf) 
+ [SELA-TREE-SEARCH_ENHANCED_LLM_AGENTS_FOR_AUTOMATED_MACHINE_LEARNING.pdf](pdf\SELA- TREE-SEARCH ENHANCED LLM AGENTS FOR AUTOMATED MACHINE LEARNING.pdf) 
 
 2、自己继续探索其他相关工作的效果，
 
@@ -46,7 +46,7 @@
 
 ## 风电功率预测（Wind Power ）
 
-任务背景： [风电功率预测（短期）SOW](..\风电功率预测（短期）SOW\README.md) 
+任务背景： [风电功率预测（短期）SOW](../风电功率预测（短期）SOW\README.md) 
 
 | SOTA                                        | OpenHands性能 | 目前最高性能 |
 | ------------------------------------------- | ------------- | ------------ |
@@ -54,7 +54,7 @@
 
 ## **时间动作定位（**Temporal Action Localisation）
 
-任务背景： [MLRC-Bench  Temporal Action Localisation SOW](..\MLRC-Bench  Temporal Action Localisation SOW\README.md) 
+任务背景： [MLRC-Bench  Temporal Action Localisation SOW](../MLRC-Bench  Temporal Action Localisation SOW\README.md) 
 
 | SOTA                                                         | OpenHands性能 | 目前最高性能 |
 | ------------------------------------------------------------ | ------------- | ------------ |
