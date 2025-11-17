@@ -12,7 +12,7 @@
 
 2）每 15 分钟向电网调度部门报送超短期功率预测数据，用于电网调度做不同电能发电量的实时调控。
 
-![img](https://dcn102rh88o5.feishu.cn/space/api/box/stream/download/asynccode/?code=YTQyOWRmZTcyNDUzOTBkMjQ4ZDQ5NTFhM2RjZmQyNzRfWVIyM2RMaUFReW5YYll1Y3JpcER0bE9ycnBGWjVPbTZfVG9rZW46QnFzOGJ6dWtOb1BjN2p4WUZjeGNMN3dvbm9nXzE3NjMzNzA1NTY6MTc2MzM3NDE1Nl9WNA)
+![img](./imgs/1.PNG)
 
 另外，2025年2月发布的《136号文》明确要推动新能源公平参与实时市场，加快实现自愿参与日前市场。实时市场、日前市场分别对应超短期预测、短期预测。
 
