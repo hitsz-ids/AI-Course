@@ -1,18 +1,3 @@
-# 背景材料：
-
-优先完整看完《量化交易第一性原理  https://www.youtube.com/watch?v=eV2YqJYfjUQ》视频课程，其余资料作为参考库，在遇到具体问题时按需查阅
-
-- Quant Wiki 中文量化百科：https://quant-wiki.com/
-
-- Datawhale量化开源课程：https://datawhalechina.github.io/whale-quant/#/?id=datawhale%e9%87%8f%e5%8c%96%e5%bc%80%e6%ba%90%e8%af%be%e7%a8%8b
-
-- 一个完整的机器学习做量化的教程：https://github.com/stefan-jansen/machine-learning-for-trading
-
-  
-
-# 如何在A股上使用最基础的AI模型（LightBGM）进行选股
-
-[量化选股baseline](https://dcn102rh88o5.feishu.cn/wiki/UXqkwRfrWiYtjMkCoBfcLNXznEb)
 
 # 如何使用RA的方式来进行量化交易
 
