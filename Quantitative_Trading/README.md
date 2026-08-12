@@ -27,15 +27,6 @@
 
 ---
 
-## 🚀 快速开始
-
-```bash
-# 克隆仓库
-git clone <repo-url>
-
-# 建议使用 Python 3.10+，创建虚拟环境
-python -m venv .venv && source .venv/bin/activate
-
 # 按阶段目录逐步学习
 ```
 
