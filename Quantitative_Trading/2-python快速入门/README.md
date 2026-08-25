@@ -26,4 +26,4 @@
 
 ### [【莫烦Python】Matplotlib Python 画图教程](https://www.bilibili.com/video/av16378354/?vd_source=dc799f8f08fcfd07702c7b4cb2519f72)
 
-###[还在用Pandas？Polars！这篇就够了，2.5万字+详解！](https://mp.weixin.qq.com/s/FjXeyIfsoZIa70uOPeObgg?spm_id_from=333.1369.0.0)
+### [还在用Pandas？Polars！这篇就够了，2.5万字+详解！](https://mp.weixin.qq.com/s/FjXeyIfsoZIa70uOPeObgg?spm_id_from=333.1369.0.0)
