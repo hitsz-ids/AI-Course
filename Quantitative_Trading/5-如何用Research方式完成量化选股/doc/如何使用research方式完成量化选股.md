@@ -1,4 +1,3 @@
-
 # 如何使用RA的方式来进行量化交易
 
 一个典型的数据驱动任务Research流程为：
@@ -731,151 +730,31 @@ HTML 必须包含：
 
 ### 环境准备
 
-#### 1.工作空间准备
+MASTER-Market-Guided Stock Transformer for Stock Price Forecasting.pdf
 
-##### 1.1 创建工作空间目录
+将master论文转换为pdf,准备conda环境名叫master_test
 
-创建一个文件夹master用于复现论文,并将论文放入其中
+![img](../imgs/codex/create_conda.png)
 
-```Plain
-mkdir master
-```
 
-##### 1.2 使用VScode并选择该文件夹
-
-选择master文件夹后,将论文放到文件夹目录下
-
-![img](../imgs/vscode_1.png)
-
-##### 1.3 Cline安装(如果已经安装,跳过)
-
-点击插件管理按钮
-
-![img](../imgs/install_cline_1.png)
-
-输入Cline,搜索出后点击并安装
-
-![img](../imgs/install_cline_2.png)
-
-##### 1.4 点击Cline图标跳转对话
-
-![img](../imgs/cline_chat_1.png)
-
-![img](../imgs/cline_chat_2.png)
-
-#### 2.Python环境准备
-
-##### 2.1 软件下载
-
-下载地址: https://www.anaconda.com/download/success
-
-点击下载地址,根据自身电脑版本下载miniconda安装包
-
-MacOS:
-
-![img](../imgs/conda_macos.png)
-
-Windows
-
-![img](../imgs/conda_windows.png)
-
-##### 2.2 软件安装
-
-双击安装包打开安装图形界面点击继续按钮
-
-![img](../imgs/conda_install_1.png)
-
-###### 附件: [安装参考视频](https://www.bilibili.com/video/BV1BFSJYEEj2/?spm_id_from=333.337.search-card.all.click&vd_source=99a1a0fc95d22736eceeb45b8bf76c45)
-
-安装成功后打开终端会有一个base环境
-
-![img](../imgs/conda_install_2.png)
-
-##### 2.3 创建自定义Python环境
-
-1、打开终端
-
-![img](../imgs/conda_create_env_1.png)
-
-2、输入命令创建python版本,这里以python3.12版本为例
-
-```Plain
-conda create -n python_env python=3.12 -y
-```
-
-![img](../imgs/conda_create_env_2.png)
-
-3、回车执行安装命令
-
-![img](../imgs/conda_create_env_3.png)
-
-4、等待界面提示  **conda activate python_env**  安装完成
-
-![img](../imgs/activate_env_1.png)
-
-5、执行conda命令切换已安装python环境
-
-```Plain
-conda activate python_env
-```
-
-![img](../imgs/activate_env_2.png)
-
-6、命令终端显示已切换到python_env环境
-
-![img](../imgs/activate_env_3.png)
-
-7、终端输入查看Python版本验证,正确版本号为3.12
-
-```Plain
- python -V 
-```
-
-![img](../imgs/python_v.png)
-
-#### 3.环境依赖安装
-
-因为论文是pdf格式,我们要将论文转换成大模型可以读取论文内容的markdown格式.
-
-##### 3.1 创建虚拟环境
-
-```Plain
-帮我创建一个conda虚拟环境master_test,python版本使用3.11并且安装依赖工具markitdown,需要将pdf转换成markdown
-```
-
-![img](../imgs/cline_create_env_1.png)
-
-大模型生成脚本,点击Run Command执行
-
-![img](../imgs/cline_create_env_2.png)
-
-Cline运行命令自动安装
-
-![img](../imgs/cline_env_install_1.png)
-
-安装完成
-
-![img](../imgs/cline_env_install_2.png)
-
-#### 4.将论文格式转换pdf-markdown
-
-将prompt输入Cline对话框并发送,生成markdown文件
 
 ```Plain
 请使用master_test的conda环境,将论文Master转换成markdown格式
 ```
 
-![img](../imgs/cline_pdf_2_md_1.png)
+codex会自动使用conda环境并且寻找依赖工具,如果没有依赖工具会提示安装,安装完成后
 
-目录下已经生成论文markdown文档
+![img](../imgs/codex/activate_conda.png)
 
-![img](../imgs/cline_pdf_2_md_2.png)
+点击markdown文件可以看到论文已经转换完成
+
+![](../imgs/codex/pdf2md.png)
 
 ### 论文理解
 
 ##### 1.我们要知道论文到底讲了什么思想
 
-cline对话框输入prompt让大模型将论文解读一下,我们需要知道论文到底讲了什么思想
+CodeX对话框输入prompt让大模型将论文解读一下,我们需要知道论文到底讲了什么思想
 
 ```YAML
 你是一位顶尖的科普作家和知识转述者，被誉为“最会搭梯子的人”。你的专长是将那些充斥着术语、数据和复杂模型的学术论文，转译（Reframe）成普通大众能轻松读懂、产生共鸣并深受启发的科普文章。
@@ -974,19 +853,23 @@ cline对话框输入prompt让大模型将论文解读一下,我们需要知道�
 
 将prompt放入对话框,发送给大模型
 
-![img](../imgs/cline_chat_paper_mind_1.png)
+![img](../imgs/codex/popular_science.png)
 
-大模型执行后,会询问我们是否保存,点击Save将论文思想保存下来,方便我们读懂
+大模型解读完成,我们要求将其保存为Master-科普文档.md
 
-![img](../imgs/cline_chat_paper_mind_2.png)
+```Plain
+将文档保存为Master-科普解读.md
+```
+
+![img](../imgs/codex/save_popular_science.png)
 
 文件已保存到工作目录下了
 
-![img](../imgs/cline_chat_paper_mind_3.png)
+![img](../imgs/codex/save_popular_science_1.png)
 
 ##### 2.我们要知道论文提出的方法是什么
 
-将prompt输入Cline输入框并发送,我们要更深入的了解论文做了什么,而且可视化的去理解.
+将prompt输入CodeX输入框并发送,我们要更深入的了解论文做了什么,而且可视化的去理解.
 
 ~~~YAML
 # 论文结构化解读 + Canvas 动画演示 HTML 生成器
@@ -1510,17 +1393,19 @@ HTML 必须包含：
 
 发送prompt后等待文档生成
 
-![img](../imgs/cline_chat_paper_method_1.png)
+![img](../imgs/codex/master_method_1.png)
 
-执行执行过程中,大模型会分步 生成文档,并询问是否保存,点击保存就行
+html生成完成,让大模型保存为html文件
 
-![img](../imgs/cline_chat_paper_method_2.png)
+```Plain
+保存为Master-可视化解读.html
+```
 
-![img](../imgs/cline_chat_paper_method_3.png)
+![img](../imgs/codex/master_method_2.png)
 
-文档生成完成
+![img](../imgs/codex/master_method_3.png)
 
-![img](../imgs/cline_chat_paper_method_4.png)
+
 
 ### 论文复现
 
@@ -1536,19 +1421,13 @@ HTML 必须包含：
 将master的开源代码下载下来并将依赖依赖安装到master_test环境
 ```
 
-![img](../imgs/download_code_1.png)
+![img](../imgs/codex/reproduction_1.png)
 
-Cline会自动的去下载代码并且安装依赖,
+CodeX会自动的去下载代码并且安装依赖,
 
 我们可以看到开源代码已经下载完成,并且已经在进行依赖安装,处理依赖问题
 
-![img](../imgs/download_code_2.png)
-
-![img](../imgs/download_code_3.png)
-
-所有依赖已经安装完成
-
-![img](../imgs/download_code_3.png)
+![img](../imgs/codex/reproduction_2.png)
 
 ##### 2.复现论文结果
 
@@ -1558,21 +1437,19 @@ Cline会自动的去下载代码并且安装依赖,
 请根据论文实验,复现论文实验结果
 ```
 
-大模型结合论文与代码后,发现缺少数据,需要我们去下载数据
+大模型结合论文与代码后,发现缺少数据,与大模型对话后获得下载地址,需要我们去下载数据
 
-![img](../imgs/reproduction_1.png)
+![img](../imgs/codex/reproduction_3.png)
 
 ###### 数据下载
 
-告诉大模型直接使用预训练模型,发现还是需要数据,大模型并给出了数据下载地址,我们手动去下载推荐的百度网盘
+根据数据下载地址,我们手动去下载推荐的百度网盘
 
-![img](../imgs/download_data_1.png)
-
-![img](../imgs/download_data_2.png)
+![img](../imgs/codex/reproduction_4.png)
 
 将数据下载完成后放到文件夹下
 
-![img](../imgs/download_data_3.png)
+![img](../imgs/codex/reproduction_5.png)
 
 ###### 开始复现
 
@@ -1582,27 +1459,23 @@ Cline会自动的去下载代码并且安装依赖,
 数据集已经下载到文件夹下,请使用预训练模型与数据集验证实验效果
 ```
 
-在复现过程中,Cline会去扫描代码,如果发现有bug,会自动修复.
+在复现过程中,CodeX会去扫描代码,如果发现有bug,会自动修复.
 
-![img](../imgs/reproduction_2.png)
+![img](../imgs/codex/reproduction_6.png)
 
 复现结果完成,并生成了对比报告.
 
-![img](../imgs/reproduction_3.png)
+![img](../imgs/codex/reproduction_7.png)
 
-通过查阅结果报告我们发现,数据有差异,是因为使用的预训练模型和opensource,让大模型再用original数据复现
+复现完成,要求大模型生成对比报告
 
 ```Plain
-使用origineal数据再复现一遍
+生成复现结果与论文对比报告
 ```
 
-使用original训练,然后用opensource测试
+![img](../imgs/codex/reproduction_8.png)
 
-![img](../imgs/reproduction_4.png)
-
-![img](../imgs/reproduction_5.png)
-
-完整实验结果对比报告.md
+![img](../imgs/codex/reproduction_9.png)
 
 通过查看完整实验报告,发现达到论文效果,那么我们认为这篇量化的论文是有效论文.接下来我们就要进行数据适配.
 
@@ -1675,7 +1548,7 @@ sh download_qlibdata.sh
 
 1. ##### 环境准备
 
-我们使用VSCode+Cline+Python来构建环境.详细内容跳转**环境准备**段落
+我们使用VSCode+CodeX+Python来构建环境.详细内容跳转**环境准备**段落
 
 1. ##### 传统Vibe Coding在做什么？
 
@@ -1800,7 +1673,7 @@ Vibe Coding主流的两种思路:
 
 ![img](../imgs/adaptation_2.png)
 
-我们了解了数据处理的特点后,我们直接跟Cline对话
+我们了解了数据处理的特点后,我们直接跟CodeX对话
 
 ```Plain
  使用qlib数据源,切分训练集,验证集,测试集,并保存pkl
@@ -1811,9 +1684,11 @@ Vibe Coding主流的两种思路:
  可以参考master本身提供的数据集opensource,original查看数据结构
 ```
 
-Cline生成数据生成代码并运行,数据集生成完成
+CodeX生成数据生成代码并运行,数据集生成完成
 
-![img](../imgs/adaptation_3.png)
+![img](../imgs/codex/adaptation_1.png)
+
+![img](../imgs/codex/adaptation_2.png)
 
 ##### 5.2 查看数据
 
@@ -1827,23 +1702,21 @@ Cline生成数据生成代码并运行,数据集生成完成
 读取训练集,测试集,验证集pkl文件,输出时间范围
 ```
 
-可以看到Cline生成了查看数据集时间范围的代码与输出了时间范围,检查后没有问题.
+可以看到CodeX输出了时间范围,检查后没有问题.
 
-![img](../imgs/adaptation_5.png)
+![img](../imgs/codex/adaptation_3.png)
 
 ###### **5.2.2 缺失值查看**
 
-将以下内容发送给Cline
+将以下内容发送给CodeX
 
 ```Plain
 数据处理中对于标签的缺失值是如何处理的? 相关代码在哪里. 同时检查数据集缺失值是否满足向前填充(ffill)而不是向后填充(bfill)
 ```
 
-Cline生成check_nan.py代码,检查缺失值填充是否是向前填充而不是向后填充暴露未来数据
+![img](../imgs/codex/adaptation_4.png)
 
-![img](../imgs/adaptation_5.png)
-
-Cline检查发现并没有使用向后填充,并列出了填充方式.
+CodeX检查发现并没有使用向后填充,并列出了填充方式.
 
 同时为了保证训练集最大样本数,我们要对训练集的标签NaN进行前向填充,最大化利用有限的连续交易时段.而验证集和训练集保留原生 `NaN`，意味着只对那些“确定拥有真实、可计算标签”的起始点进行回测。这确保了评估结果代表模型在真实历史断面上的纯粹预测能力，没有掺入任何人为合成的近似值。这里我们总结了qlib数据集在训练集,验证集,测试集上的特点与模板代码
 
@@ -1855,19 +1728,19 @@ Cline检查发现并没有使用向后填充,并列出了填充方式.
 
 生成检查代码,并修改数据集生成代码后执行.
 
-![img](../imgs/adaptation_6.png)
+![img](../imgs/codex/adaptation_5.png)
 
 ###### **5.2.3 缺失值处理数据时效性约束**
 
-对话Cline查看缺失值长时效处理
+对话CodeX查看缺失值长时效处理
 
 ```Plain
 检查一下数据集中缺失值最多有多少天,有没有对缺失值长时间的处理
 ```
 
-![img](../imgs/adaptation_7.png)
+![img](../imgs/codex/adaptation_6.png)
 
-可以看到,Cline通过代码检查得出结论,没有长时间NaN的数据
+可以看到,Codex通过代码检查得出结论,没有长时间NaN的数据,连续缺失也只是csi300的股票池动态变化导致
 
 ###### **5.2.4 论文数据特点**
 
@@ -1891,9 +1764,11 @@ Cline检查发现并没有使用向后填充,并列出了填充方式.
 4.市场特征：F' = 63 维市场状态向量（包括市场指数价格、交易量等的统计特征）
 ```
 
-Cline生成校验代码并执行,Master代码特点全部校验通过,我们可以查看每个校验点的代码逻辑,以及代码输出来确认是否OK
+CodeX生成校验代码并执行,Master代码特点全部校验通过,我们可以查看每个校验点的代码逻辑,以及代码输出来确认是否OK
 
-![img](../imgs/adaptation_8.png)
+![img](../imgs/codex/adaptation_7.png)
+
+![img](../imgs/codex/adaptation_8.png)
 
 ##### 5.3 数据适配边界
 
@@ -1919,9 +1794,17 @@ Cline生成校验代码并执行,Master代码特点全部校验通过,我们可�
 给出能证伪的判据 + 打印输入/输出/期望值
 ```
 
-Cline生成检查边间代码,以第二条边界为例,检查代码,逻辑没有问题.整个边界检查通过
+CodeX生成检查边间代码,.整个边界检查通过
 
-![img](../imgs/adaptation_9.png)
+![img](../imgs/codex/adaptation_9.png)
+
+查看边界检查代码
+
+![img](../imgs/codex/adaptation_10.png)
+
+进入到终端运行边界检查日志,查看日志输出,验证通过
+
+![img](../imgs/codex/adaptation_11.png)
 
 1. #### 算法适配
 
@@ -1933,7 +1816,7 @@ Cline生成检查边间代码,以第二条边界为例,检查代码,逻辑没有
 
 Master开源的代码中已经包含了算法逻辑,所以我们需要检查的是我们适配的数据集是否适配算法本身的输入
 
-我们现在让Cline帮助检查我们生成的数据集是否适配master模型训练的输入,这条检查对应到我们边界检查中的
+我们现在让CodeX帮助检查我们生成的数据集是否适配master模型训练的输入,这条检查对应到我们边界检查中的
 
 批次交互:确保批次分组符合模型/损失函数对组内交互的要求
 
@@ -1942,9 +1825,9 @@ Master开源的代码中已经包含了算法逻辑,所以我们需要检查的�
 实测模型训练前数据输入是否符合master论文要求,确保进入训练的数据batch是date-major,同一日期的不同股票数据
 ```
 
-Cline会去读取Master代码,生成检查代码,查看并检查通过
+CodeX会去读取Master代码,生成检查代码,查看并检查通过
 
-![img](../imgs/adaptation_10.png)
+![img](../imgs/codex/adaptation_12.png)
 
 ##### 6.2算法适配边界检查
 
@@ -1972,29 +1855,27 @@ Cline会去读取Master代码,生成检查代码,查看并检查通过
 给出能证伪的判据 + 打印输入/输出/期望值
 ```
 
-生成边界检查代码,发现部分通过,发现问题还是对于master算法数据结构,只是代码看了一眼,并没有实际读取并转换.
+![img](../imgs/codex/adaptation_13.png)
 
-![img](../imgs/adaptation_11.png)
+生成边界检查代码,发现部分通过
 
-对话Cline
+![img](../imgs/codex/adaptation_14.png)
 
 ```Plain
 实测当前保存的 pkl 到底是不是 date-major,实测输入进模型的batch数据是否是date-major,以实际为准.
 ```
 
-Cline实际运行确认是数据问题
+CodeX实际运行确认是数据问题
 
-![img](../imgs/adaptation_12.png)
+![img](../imgs/codex/adaptation_15.png)
 
-告诉Cline必须修复这个问题.
+CodeX修复完成,并重新检查边界通过
 
-```Plain
-修复完成,要求进入模型训练的数据batch,必须符合date-major,同一日期的不同股票数据.这是算法核心
-```
+![img](../imgs/codex/adaptation_16.png)
 
-![img](../imgs/adaptation_13.png)
+终端运行代码也是通过
 
-Cline修复完成,并重新检查边界通过.
+![img](../imgs/codex/adaptation_17.png)
 
 1. #### 训练与验证
 
@@ -2006,7 +1887,15 @@ Cline修复完成,并重新检查边界通过.
 数据适配与算法适配已经完成,进行模型训练,只训练seed0
 ```
 
-![img](../imgs/adaptation_14.png)
+![img](../imgs/codex/adaptation_18.png)
+
+大模型会后台进行训练,可以通过询问大模型查询进度
+
+![img](../imgs/codex/adaptation_19.png)
+
+查看日志等待训练结束
+
+![img](../imgs/codex/adaptation_20.png)
 
 训练完成后,我们让大模型运行获得IC,ICIR等值,并于原论文对比
 
@@ -2014,34 +1903,22 @@ Cline修复完成,并重新检查边界通过.
 使用我们训练好的模型与准备的回测程序evaluation/backtest.py,回测的选股逻辑Top-K=10 持仓，每次最多换 2 只 (n_drop=2)，保护利润阈值 5%–10%在测试集上回测并与论文年化收益对比
 ```
 
-![img](../imgs/adaptation_15.png)
+![img](../imgs/codex/adaptation_21.png)
 
-**与论文对比：**
+**与论文收益率对比**
 
-| 指标                           | 论文（5-seed avg） | 本次（seed=0） |
-| ------------------------------ | ------------------ | -------------- |
-| IC                             | 0.0777             | 0.0663         |
-| ICIR                           | 0.5403             | 0.4296         |
-| 年化超额收益（含成本，Top-10） | 13.7%              | **31.59%**     |
+| 对比项                       | 年化收益率 |
+| ---------------------------- | :--------- |
+| 论文 MASTER CSI300(不含成本) | 0.27       |
+| 本次回测，不含成本           | 0.4018     |
+| 本次回测，含成本             | 0.3352     |
 
-指标论文（5-seed avg）本次（seed=0）IC0.07770.0663ICIR0.54030.4296年化超额收益（含成本，Top-10）13.70%31.59%
+**模型指标**
 
-可以看到Cline选用的是平均avg
-
-对话Cline使用table1中的模型指标与我们训练的对比
-
-```Plain
-使用Master论文中Table1中的指标与我们训练的模型的指标对比
-```
-
-![img](../imgs/adaptation_16.png)
-
-模型指标
-
-| 模型                      | IC        | ICIR     | RankIC    | RankICIR |
-| ------------------------- | --------- | -------- | --------- | -------- |
-| **MASTER (论文, 5-seed)** | **0.064** | **0.42** | **0.076** | **0.49** |
-| **我们的复现 (seed=0)**   | **0.064** | 0.4      | 0.072     | 0.43     |
+| 模型                    | IC    | ICIR | RankIC | RankICIR |
+| ----------------------- | ----- | ---- | ------ | -------- |
+| **MASTER (论文)**       | 0.064 | 0.42 | 0.076  | 0.49     |
+| **我们的适配 (seed=0)** | 0.06  | 0.39 | 0.072  | 0.47     |
 
 IC/ICIR/RankICk/RankICIR均在论文误差范围内，适配成功。
 
@@ -2053,11 +1930,11 @@ IC/ICIR/RankICk/RankICIR均在论文误差范围内，适配成功。
 
 方法的两层架构:
 
-**第一层：****群体智能**
+**第一层：** **群体智能**
 
 在Master论文中,核心的数据源代码处理并没有公开,我们通过检索金融数据处理相关工作，总结出金融数据处理的第一性原理与边界.
 
-**第二层：基于****第一性原理****的领域边界契约模式**
+**第二层：** **基于第一性原理的领域边界契约模式**
 
 AI负责根据契约编写代码，同时生成边界契约检查代码，我们只需要看核心代码是否正确,以及代码能否通过边界契约检查——而不用去看繁琐的核心代码.
 
@@ -2087,17 +1964,17 @@ AI负责根据契约编写代码，同时生成边界契约检查代码，我们
 
 ![img](../imgs/simulation_trading_5.png)
 
-Cline对话预测指定日期的top10,因为我们是第一次建仓,直接预测出了top10
+CodeX对话预测指定日期的top10,因为我们是第一次建仓,直接预测出了top10
 
-![img](../imgs/simulation_trading_6.png)
+![img](../imgs/codex/prediction.png)
 
 生成的预测csv也在指定目录下可以查询
 
-![img](../imgs/simulation_trading_7.png)
+![img](../imgs/codex/prediction_1.png)
 
 模拟盘挨个买入
 
-![img](../imgs/simulation_trading_8.png)
+![img](../imgs/codex/prediction_2.png)
 
 优化
 
