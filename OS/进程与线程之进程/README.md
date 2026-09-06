@@ -34,7 +34,7 @@
 
 ## 1、下载codex
 
-https://openai\.com/zh\-Hans\-CN/codex/
+https://openai.com/zh-Hans-CN/codex/
 
 ## 2、退出登录
 
@@ -54,7 +54,7 @@ https://openai\.com/zh\-Hans\-CN/codex/
 
 这里采用deepseek作为模型提供方。会用到之前创建的deepseek api key。
 
-配置方式：https://api\-docs\.deepseek\.com/zh\-cn/quick\_start/agent\_integrations/codex
+配置方式：https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex
 
 推荐使用链接中描述的“一键配置脚本”
 
@@ -118,11 +118,11 @@ irm https://cdn.deepseek.com/api-docs/codex-deepseek-setup-en.ps1 | iex
 
 ![Image](img/15.png)
 
-下面将使用codex编写bootloader启动程序和进程创建的程序。这里展示了GPT\-5\.5版本和deepseek\-v4\-flash两种不同模型版本的实验结果。
+下面将使用codex编写bootloader启动程序和进程创建的程序。这里展示了deepseek-v4-flash模型版本的实验结果。
 
 具体的实验结果不能保证一模一样，可能会有所差异。
 
-## bootloader启动程序与进程创建（deepseek\-v4\-flash版本）
+## bootloader启动程序与进程创建（deepseek-v4-flash版本）
 
 1. 跟codex进行交互，安装qemu，模拟目标机器，安全地跑操作系统
 
