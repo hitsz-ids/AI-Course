@@ -8,7 +8,7 @@
 
 ## 1、创建api key
 
-需要提前准备deepseek账号。如果没有，请先注册并充值：https://platform\.deepseek\.com/sign\_up
+需要提前准备deepseek账号。如果没有，请先注册并充值：https://platform.deepseek.com/sign_up
 
 进入deepseek管理页面。左侧选择“API keys”，然后点击“创建API key”。
 
