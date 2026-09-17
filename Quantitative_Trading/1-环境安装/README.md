@@ -125,7 +125,7 @@ experimental_bearer_token = "sk-xxxxxx"
 }
 ```
 
-如果无法使用安全岛，可以直接使用deepseek的配置方式：https://api\-docs\.deepseek\.com/zh\-cn/quick\_start/agent\_integrations/codex
+如果无法使用安全岛，可以直接使用deepseek的配置方式：https://api-docs.deepseek.com/zh-cn/quick_start/agent_integrations/codex
 
 ### 3.3 添加项目目录
 
